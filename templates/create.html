@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/create.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Add User</title>
+</head>
+<body>
+    <h1>ADD USER</h1>
+    <div class="box">
+        <form action="/add_user/update", method="post">
+            <label for="first_name">First Name: </label>
+            <input type="text" name="first_name" class="form-control" id="first_name_id">
+            <label for="last_name">Last Name: </label>
+            <input type="text" name="last_name" class="form-control" id="last_name_id">
+            <label for="email">Email: </label>
+            <input type="text" class="form-control" name="email" id="email_id">
+            <button type="submit" name="add_user" class="btn btn-primary" >Add User</button>
+        </form>
+    </div>
+</body>
+</html>
